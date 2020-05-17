@@ -1,0 +1,84 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.container {
+    margin-top: 4rem;
+}
+
+a:hover {
+    color: #f1f1f8;
+    text-decoration: underline;
+}
+
+.solid {
+    display: inline-block;
+    padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+    border: 0.125rem solid #F28E2A;
+    border-radius: 2rem;
+    background-color: #F28E2A;
+    color: white;
+    font-weight: 700 0.75rem/0;
+    font-size: larger;
+    font-family: sans-serif;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.solid:hover {
+    background-color: transparent;
+    color: #F28E2A;
+    text-decoration: none;
+}
+
+.my-mfp-slide-bottom .zoom {
+    color: #66811B;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+    transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
+}
+
+.my-mfp-slide-bottom.mfp-ready .zoom {
+    opacity: 1;
+    transform: translateY(0) perspective(37.5rem) rotateX(0);
+}
+
+.my-mfp-slide-bottom.mfp-removing .zoom {
+    opacity: 1;
+    transform: translateY(-0.579) perspective(37.5rem) rotateX(10deg);
+}
+
+.my-mfp-slide-bottom.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+.lightbox-basic {
+    position: relative;
+    max-width: 47.875rem;
+    margin: 2.5rem auto;
+    padding: 3rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #DDEEAD;
+    text-align: left;
+}
+
+.lightbox-basic a.mfp-close.as-button:hover {
+    color: #f1f1f8;
+}
+
+.lightbox-basic button.mfp-close.x-button {
+    color: #66811B;
+    position: absolute;
+}
